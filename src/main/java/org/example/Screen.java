@@ -59,7 +59,6 @@ public class Screen {
         obstacles.addAll(getCenterObstacles());
         return obstacles;
     }
-
     public List<Position> getBorderObstacles() {
         List<Position> borderObstacles = new ArrayList<>();
 
@@ -88,7 +87,6 @@ public class Screen {
         }
         return borderObstacles;
     }
-
     public void drawObstacles(List<Position> obstacles) throws IOException {
         char block = '\u2588';
         for (Position p : obstacles) {
@@ -98,8 +96,8 @@ public class Screen {
     }
     public List<Position> getBombPositions() {
         List<Position> bombPositions = new ArrayList<Position>();
-        int[] obstacleArrayX = new int[]{8, 24, 40, 56, 72};
-        int[] obstacleArrayY = new int[]{4, 8, 12, 16, 20};
+        int[] obstacleArrayX = new int[]{5,3, 24, 40, 56, 72};
+        int[] obstacleArrayY = new int[]{8,10, 12, 16, 20,21};
         System.out.println("BOMb");
         for (int arrayX : obstacleArrayX) {
             for (int j = 0; j < obstacleArrayX.length; j++) {
